@@ -170,14 +170,6 @@ td, th{
     clear: left;
 }
 
-.titulo-principal::first-letter{
-    font-weight: bold;
-}
-
-p:first-line{
-    font-style: italic;
-}
-
 .principal p{
     margin: 0 0 1em;
 }
@@ -231,12 +223,21 @@ p:first-line{
     line-height: 1.5;
 }
 
+.items:before{
+    content: "★";
+}
+
 .items:first-child{
     font-weight: bold;
 }
 
 .imagen-Diferenciales{
     width: 60%;
+    box-shadow: 10px 10px 30px 5px #000000;
+}
+.imagen-Diferenciales:hover{
+    opacity: 30%;
+    transition: 400ms;
 }
 
 .video{
